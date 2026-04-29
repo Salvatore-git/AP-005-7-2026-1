@@ -6,7 +6,7 @@ def saludar(nombre):
         print(f"Hola, {nombre}. Mensaje {i}")
         time.sleep(1)
 
-hilo = threading.Thread(target=saludar, args=("Ana",))
+hilo = threading.Thread(target=saludar, args=("Salvatore",))
 hilo.start()
 hilo.join()
 print("Fin del programa")
