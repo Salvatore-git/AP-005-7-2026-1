@@ -15,7 +15,7 @@ int main(){
 
     printf("Antes de cambiarSinPuntero: x = %d\n", x);
     cambiarSinPuntero(x);
-    printf("Desoues de cambiarSinPuntero: x = %d\n", x);
+    printf("Despues de cambiarSinPuntero: x = %d\n", x);
     
     printf("Antes de cambiarConPuntero: x = %d\n");
     cambiarCoNPuntero(&x);
