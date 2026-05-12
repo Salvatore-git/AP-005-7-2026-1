@@ -8,7 +8,7 @@ int* crearNumeroIncorrecto() {
 int main() {
     int* p = crearNumeroIncorrecto();
 
-    // Esto es peligroso y probablemente imprima basura o cause un crash
+    // Esto se rompe o se rompe.
     std::cout << "Valor = " << *p << std::endl;
 
     return 0;
