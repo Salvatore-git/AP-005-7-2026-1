@@ -1,22 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 
 int main() {
-    int *p = NULL;
+    int* p = nullptr;
 
-    p = malloc(sizeof(int));
+    // Reserva memoria en el Heap para un entero
+    p = new (std::nothrow) int; 
 
-    if (p == NULL) {
-        printf("No se pudo reservar memoria.\n");
+    if (p == nullptr) {
+        std::cerr << "No se pudo reservar memoria." << std::endl;
         return 1;
     }
 
     *p = 80;
+    std::cout << "Valor = " << *p << std::endl;
 
-    printf("Valor = %d\n", *p);
-
-    free(p);
-    p = NULL;
+    // Libera la memoria
+    delete p;
+    p = nullptr;
 
     return 0;
 }
